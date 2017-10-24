@@ -74,16 +74,16 @@ module.exports = {
 	    			}
 	    		}
     		]	
-      },
-      // less loader
-      {
-        test: /\.less$/,
-        use: [
-        	{
-            loader: "style-loader" // creates style nodes from JS strings 
-          }, 
-          {
-          	loader: "css-loader" // translates CSS into CommonJS 
+			},
+		  // less loader
+		  {
+		    test: /\.less$/,
+		    use: [
+		    	{
+		        loader: "style-loader" // creates style nodes from JS strings 
+		      }, 
+		      {
+	      	loader: "css-loader" // translates CSS into CommonJS 
 	    		},
 	    		{ 
 	      		loader: 'postcss-loader',
@@ -97,24 +97,24 @@ module.exports = {
 	      					require('autoprefixer')({
 	      						broswers: ['last 5 versions']
 	      					})
-      					]
+	  						]
 	      			}
 	    			}
 	    		},
 	    		{
-         		loader: "less-loader" // compiles Less to CSS 
+	     		loader: "less-loader" // compiles Less to CSS 
 	       	}
-       	]
-      },
-      // sass loader
-      {
-        test: /\.scss$/,
-        use: [
-        	{
-            loader: "style-loader" // creates style nodes from JS strings 
-          }, 
-          {
-          	loader: "css-loader" // translates CSS into CommonJS 
+		   	]
+		  },
+		  // sass loader
+		  {
+		    test: /\.scss$/,
+		    use: [
+		    	{
+		        loader: "style-loader" // creates style nodes from JS strings 
+		      }, 
+		      {
+		      	loader: "css-loader" // translates CSS into CommonJS 
 	    		},
 	    		{ 
 	      		loader: 'postcss-loader',
@@ -128,15 +128,15 @@ module.exports = {
 	      					require('autoprefixer')({
 	      						broswers: ['last 5 versions']
 	      					})
-      					]
+	  						]
 	      			}
 	    			}
 	    		},
 	    		{
-         		loader: "sass-loader" // compiles sess to CSS 
+	     		loader: "sass-loader" // compiles sess to CSS 
 	       	}
-       	]
-      },
+		   	]
+		  },
 			// picture loader
 			{
 				test: /\.(png|jpg|gif|svg)$/,
